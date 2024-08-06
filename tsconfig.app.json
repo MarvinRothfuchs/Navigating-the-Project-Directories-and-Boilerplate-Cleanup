@@ -9,6 +9,22 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
+
+    // Standard Compiler-Optionen für TypeScript-Projekte
+    "target": "esnext", // oder eine andere ES-Version, die Sie benötigen
+    "module": "esnext", // oder "commonjs" je nach Projektanforderung
+    "moduleResolution": "node",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "resolveJsonModule": true,
+    "jsx": "preserve" // Falls Sie JSX in Ihrem Projekt verwenden
   }
 }
